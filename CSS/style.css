@@ -1,0 +1,200 @@
+* {
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+}
+body {
+    background-image: url(image/paper.jpeg);
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+.ask {
+    padding-top: 20%;
+}
+.ask h2{
+    padding: 25px;
+    font-size: 50px;
+    color: navy;
+}
+.ask span {
+    color: lightcoral;
+}
+.ask a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: lightblue;
+    color: darkslategray;
+    margin: 5px 10px;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.ask a:hover {
+    background: none;
+    color: navy;
+}
+.image {
+    padding-top: 30px;
+}
+#smp {
+    width: 640px;
+    height: 420px;
+}
+#koket {
+    width: 420px;
+    height: 420px;
+}
+#hidup {
+    width: 640px;
+    height: 420px;
+}
+.type h2 {
+    color: navy;
+    padding: 10px;
+    font-size: 25px;
+}
+.type h1 {
+    color: lightcoral;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.semoga {
+    color: lightcoral;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.button {
+    padding-bottom: 30px;
+}
+.button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: lightblue;
+    color: darkslategray;
+    margin: 5px 10px;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.button a:hover {
+    background: none;
+    color: navy;
+}
+.cake {
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+}
+.bottom-layer,
+.top-layer,
+.middle-layer {
+    height: 80px;
+    width: 240px;
+    position: relative;
+    margin: auto;
+    background-repeat: repeat;
+    background-size: 100% 100%, 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #e3a953 50px,
+        #e3a953 60px,
+        transparent 60px
+      ),
+      radial-gradient(circle at 30px 5px, #713e16 30px, #eac284 31px);
+}
+.middle-layer {
+    transform: scale(0.85);
+    top: 72px;
+    animation: rise-1 2s forwards;
+}
+@keyframes rise-1 {
+    100% {
+      top: 7px;
+    }
+}
+.top-layer {
+    transform: scale(0.7);
+    top: 144px;
+    animation: rise-2 2s 2s forwards;
+}
+@keyframes rise-2 {
+    100% {
+      top: 26px;
+    }
+}
+.candle {
+    background: repeating-linear-gradient(
+      45deg,
+      #fd3018 0,
+      #fd3018 5px,
+      #ffa89e 5px,
+      #ffa89e 10px
+    );
+    height: 45px;
+    width: 15px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: rise-3 1s 4s forwards;
+}
+@keyframes rise-3 {
+    100% {
+      bottom: 202px;
+    }
+}
+.candle:after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffee54;
+    border-radius: 0 50% 50% 50%;
+    transform: scale(0) rotate(45deg);
+    bottom: 50px;
+    left: -0.5px;
+    animation: flame 1.5s 5s forwards;
+}
+@keyframes flame {
+    100% {
+      transform: scale(1) rotate(45deg);
+    }
+}
+
+@media (max-width: 720px) {
+    #smp {
+        width: 320px;
+        height: 240px;
+    }
+    #koket {
+        width: 300px;
+        height: 300px;
+    }
+    #hidup {
+        width: 320px;
+        height: 240px;
+    }
+}
+@media (max-width: 480px) {
+    #smp {
+        width: 160px;
+        height: 120px;
+    }
+    #koket {
+        width: 200px;
+        height: 200px;
+    }
+    #hidup {
+        width: 160px;
+        height: 120px;
+    }
+}
