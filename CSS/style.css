@@ -4,7 +4,7 @@
     text-align: center;
 }
 body {
-    background-image: url("../backgroundimg/background.jpeg");
+    background-image: "../backgroundimg/background.jpeg";
 }
 .container {
     height: 100vh;
